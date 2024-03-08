@@ -195,7 +195,7 @@ export function StatsBoard(props: DashBoardProps){
                 <Loading isLoading={loading} />
 
                 {activeParticipants.length>1 && config && <StatsVis  config={config} data={completed.filter((d)=>activeParticipants.includes(d.participantId))} />}
-                {activeParticipants.length ===0 && <Title ml={200} order = {4}><IconArrowUp size={30}/>Select 1 participant to check individual detials, select 2+ participants to check stats</Title>}
+                {activeParticipants.length ===0 && activeExp && <Title ml={200} order = {4}><IconArrowUp size={30}/>Select 1 participant to check individual detials, select 2+ participants to check stats</Title>}
             </Container>
         </>
 
