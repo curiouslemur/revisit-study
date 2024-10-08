@@ -21,7 +21,7 @@ function StackedBarChart({ parameters }: { parameters: any }) {
 
   const xScale = d3
     .scaleBand()
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     .domain(parameters.data.map((d: { name: any }) => d.name))
     .range([0, dms.boundedWidth])
     .padding(0.2);

@@ -76,7 +76,7 @@ export function StudyEnd() {
 
       return () => clearInterval(interval);
     }
-    return () => {};
+    return () => { };
   }, [autoDownload, completed, delayCounter, downloadParticipant]);
 
   const studyId = useStudyId();
@@ -99,7 +99,7 @@ export function StudyEnd() {
             <Text size="xl" display="block">
               {studyConfig.uiConfig.studyEndMsg
                 ? <ReactMarkdownWrapper text={studyConfig.uiConfig.studyEndMsg} />
-                : 'Thank you for completing the study. You may close this window now.'}
+                : 'Thank you for completing the study!!!!!! You may close this window now.'}
             </Text>
           )
           : (

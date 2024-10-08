@@ -9,7 +9,7 @@ type Props = {
 };
 
 export function NextButton({
-  label = 'Next',
+  label = 'Nexxxt',
   disabled = false,
   onClick,
 }: Props) {
